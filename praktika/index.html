@@ -1,0 +1,238 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/main.css">
+    <title>Tech-lab</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="navbar">
+            <nav class="navbar navbar-expand-sm navbar-light bg-faded">
+                <!-- Бренд -->
+                <a class="navbar-brand text-light" href="/">Tech-lab</a>
+                <!-- Кнопка -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-content"
+                    aria-controls="nav-content" aria-expanded="false" aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Ссылки -->
+                <div class="collapse navbar-collapse" id="nav-content">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#about" id="about">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#services">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#contacts">Контакты</a>
+                        </li>
+                        <button type="button" class="btn btn-secondary">Войти</button>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Карусель -->
+        <div class="carousel">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/img/ai-nuclear-energy-background-future-innovation-of-disruptive-technology.jpg"
+                            class="d-block w-100" alt="img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/robot-handshake-human-background-futuristic-digital-age.jpg" class="d-block w-100"
+                            alt="img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/rpa-concept-with-blurry-hand-touching-screen.jpg" class="d-block w-100" alt="img">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="about">
+                <h1>Компания Tech-lab</h1>
+                <p>Tech-Lab — новаторская компания по разработке искусственного интеллекта, специализирующаяся на
+                    передовых алгоритмах и программных решениях. Уделяя особое внимание инновациям и развитию, в
+                    Tech-Lab работает разнообразная команда экспертов в области машинного обучения, обработки
+                    естественного языка и компьютерного зрения. Их миссия — произвести революцию в отраслях с помощью
+                    технологий, основанных на искусственном интеллекте, обеспечивая беспрецедентную эффективность и
+                    производительность своим клиентам по всему миру.</p>
+                <button type="button" class="btn btn-secondary">Воспользуйтесь нашим AI</button>
+                <!-- Модальное окно -->
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalToggleLabel">Передовые технологии</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Разрабатывает самые современные решения искусственного интеллекта с использованием новейших достижений в области машинного обучения и нейронных сетей!
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-secondary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Больше особенностей</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalToggleLabel2">Масштабируемость</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Разрабатывает модели искусственного интеллекта, которые легко масштабируются, приспосабливаясь к растущим объемам данных и требованиям пользователей без ущерба для производительности.
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-secondary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Вернуться назад</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="btn btn-secondary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Особенности нашего AI</a>
+                  <!-- end -->
+            </div>
+        </div>
+        <div class="aboutCompany" id="about">
+            <h1>О компании</h1>
+            <p>Цели и задачи компании Tech-lab по созданию искусственного интеллекта включают: улучшение
+                пользовательского опыта, автоматизацию задач, улучшение процессов принятия решений, продвижение
+                исследований и повышение эффективности в различных отраслях.</p>
+            <!-- Карточки -->
+            <div class="cards">
+                <div class="card" style="width: 21rem;">
+                    <img src="/img/ai11.avif" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h3>Передовые технологии</h3>
+                        <p class="card-text">Разрабатывает самые современные решения искусственного интеллекта с
+                            использованием новейших достижений в области машинного обучения и нейронных
+                            сетейРазрабатывает самые современные решения искусственного интеллекта с использованием
+                            новейших достижений в области машинного обучения и нейронных сетей.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 21rem;">
+                    <img src="img/ai12.avif" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h3>Индивидуальные решения</h3>
+                        <p class="card-text">Адаптирует системы искусственного интеллекта для удовлетворения конкретных
+                            потребностей клиентов, предлагая персонализированные решения для различных отраслей, таких
+                            как здравоохранение, финансы и автомобилестроение.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 21rem;">
+                    <img src="img/ai13.avif" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h3>Масштабируемость</h3>
+                        <p class="card-text">Разрабатывает модели искусственного интеллекта, которые легко
+                            масштабируются, приспосабливаясь к растущим объемам данных и требованиям пользователей без
+                            ущерба для производительности.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services" id="services">
+            <h1>Услуги предоставляемые компанией Tech-lab</h1>
+            <!-- Карточки -->
+            <div class="servicesCards">
+                <div class="card" style="width: 21rem;">
+                    <img src="/img/ai.avif" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Консультационные услуги по искусственному интеллекту</h5>
+                        <p class="card-text">Подробно опишите консультационные услуги компании, включая разработку
+                            стратегии искусственного интеллекта, технико-экономическое обоснование и планирование
+                            технологического плана.
+                            .</p>
+                        <a href="#" class="btn btn-secondary">Заказать услугу</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 21rem;">
+                    <img src="/img/ai2.avif" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Разработка искусственного интеллекта по индивидуальному заказу</h5>
+                        <p class="card-text">Подчеркните способность компании проектировать и разрабатывать
+                            индивидуальные решения искусственного интеллекта, адаптированные к конкретным потребностям
+                            клиентов, включая алгоритмы машинного обучения, нейронные сети и системы обработки
+                            естественного языка.</p>
+                        <a href="#" class="btn btn-secondary">Заказать услугу</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 21rem;">
+                    <img src="/img/ai3.avif" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Анализ данных и аналитическая информация</h5>
+                        <p class="card-text">Опишите предлагаемые услуги по анализу данных, подчеркнув способность
+                            компании извлекать ценную информацию из больших наборов данных с использованием передовых
+                            методов искусственного интеллекта, таких как прогнозный анализ и обнаружение аномалий.</p>
+                        <a href="#" class="btn btn-secondary">Заказать услугу</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Еще одна карусель -->
+        <div class="oneMoreCarousel">
+            <h1>Пример выдачи нашей AI для создания изображений</h1>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/ai_img1.jpg" class="d-block w-100" alt="img">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/ai_img2.webp" class="d-block w-100" alt="img">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/ai_img3.jpeg" class="d-block w-100" alt="img">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div> 
+        <div class="footer">
+            <p> © 2024-2024 компания Tech-lab</p>
+            <div class="contacts" id="contacts">
+                <p>email: tech-lab@gmail.com</p>
+                <p>Горячая линия: 8 666 666 76 86</p>
+            </div>
+            <div class="socials">
+                <a href="/img/vk.svg"><img src="/img/vk.svg" alt="logo" width="50px"></a>
+                <a href="/img/yt.svg"><img src="/img/yt.svg" alt="logo" width="50px"></a>
+                <a href="/img/inst.svg"><img src="/img/inst.svg" alt="logo" width="50px"></a>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap bandle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
